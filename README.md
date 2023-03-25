@@ -1,4 +1,4 @@
-# macOS on Lenovo Legion 5-15ACH6A - Ryzen 5600H & Radeon RX 6600m
+# Hackintosh on Lenovo Legion 5-15ACH6A 
 
 Lenovo Legion 5-15ACH6A Type 82NW Opencore EFI and some info for running macOS Ventura .  // Đây là một vài thông tin về EFI/opencore
 
