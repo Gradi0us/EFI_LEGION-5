@@ -2,7 +2,7 @@
 
 Lenovo Legion 5-15ACH6A Type 82NW Opencore EFI and some info for running macOS Ventura .  // Đây là một vài thông tin về EFI/opencore
 
-![]([https://photos.google.com/u/2/photo/AF1QipMrwszJG6UznrYWP31O12-MkzDWhdhOxBBkxMtD)]
+![]([https://photos.google.com/u/2/photo/AF1QipMrwszJG6UznrYWP31O12-MkzDWhdhOxBBkxMtD])
 
 ## Considerations
 
