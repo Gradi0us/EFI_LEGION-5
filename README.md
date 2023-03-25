@@ -78,7 +78,7 @@ _ Tất cả thông tin tại đây chỉ có thể để tham khảo, không n�
 ## UMAF Tool - Disable XHC1 //tắt XHC1
 
 Read [Disclaimer](https://github.com/DavidS95/Smokeless_UMAF) and download [UniversalAMDFormBrowser](https://github.com/DavidS95/Smokeless_UMAF/blob/main/UniversalAMDFormBrowser.zip)
-
+  //Thanks Kalkman for GIF
 1.  Format a pendrive in **FAT32** and copy content to root
 2.  **Boot** from **pendrive** 
 3.  Navigate to **Device Properties** > **AMD CBS** > **FCH Common Options** > **USB Configuration Options** > **XHCI1 Controller Enable**: Change to **Disabled**
