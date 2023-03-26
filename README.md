@@ -64,7 +64,7 @@ _ Tất cả thông tin tại đây chỉ có thể để tham khảo, không n�
 | Trackpad | ⛔️ | No Kext compatible with AMD found |
 | Brightness Control | ⛔️ | No Kext/SSDT compatible found |
 | Sleep | ❓ | At first, some problem with the DGPU's powerplay (I don't have the necessary knowledge to go deeper) |
-| iServices | ❓ | Nothing tested yet |
+| iServices | ❓ | Complete the SMBIOS iMessage/Facetime is work , if you wanna use Airdrop must be replace realmac Wifi |
 | Bluetooth | ⛔️ | Disable XHC1 (same with side usb)- can replace with usb bluetooth  |
 | Microphone | ⛔️ | Is not working on every AMD Devices - can replace with usb SOUND |
 
