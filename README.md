@@ -42,16 +42,10 @@ _ Tất cả thông tin tại đây chỉ có thể để tham khảo, không n�
 | Battery | ✅ | VoodooBatteryStatus Kext |
 | Shutdown/Reboot | ✅ |   |
 
-
- ## NOTICE VIETNAMESE ONLY
+`
  
-| item | Des | Note |
-| --- | --- | --- |
-| CPU | Kernel Panic | Các cpu AMD sẽ dễ gặp lỗi này 15h 16h 17h 19h https://github.com/AMD-OSX/AMD_Vanilla thêm vào config.plist hãy nhớ chỉnh lại số theo như hướng dẫn ở bên dưới ( mới nhất cho bản 13.3 beta )|
-|Laptop Model | iGPU & dGPU | hấu hết các laptop AMD đèu có card onBoard việc cài đặt sẽ trở nên bất khả thi nếu như thiết bị của bạn không hỗ trợ Mux_Switch |
-| USB bluetooth | Do tắt XHC 1 kéo theo mất bluetooth | Bạn có thể mua usb sử dụng chipset CSR8510 (mua của orico khá rẻ ) Thanks Kalkman for this Information |
-| USB SOUND | Không ai dùng laptop không cần mic | Lỗi chung của các thiết bị AMD các bạn có thể ra quán máy tính đâu đó hoặc shoppe để sử dụng 20 nghìn |
-| XHC1 | Controller | vấn đề này hiện tại mới ghi nhận ở các thiết bị laptop lenovo legion 5 |
+
+
 
 
 
