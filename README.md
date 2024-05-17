@@ -1,6 +1,6 @@
 # Hackintosh on Lenovo Legion 5-15ACH6A 
 
-Lenovo Legion 5-15ACH6A Type 82NW Opencore EFI and some info for running macOS Ventura .  // Đây là một vài thông tin về EFI/opencore
+Lenovo Legion 5-15ACH6A Type 82NW Opencore EFI and some info for running macOS 14.4 .  // Đây là một vài thông tin về EFI/opencore
 
 ![]([https://photos.google.com/u/2/photo/AF1QipMrwszJG6UznrYWP31O12-MkzDWhdhOxBBkxMtD])
 ![](https://github.com/Gradi0us/EFI_LEGION-5/blob/main/IMG/SYSTEM.png?raw=true/to/img.png)
@@ -34,11 +34,11 @@ _ Tất cả thông tin tại đây chỉ có thể để tham khảo, không n�
 | CPU | ✅ | AMD Vanilla Kernel Patches ([Modify according to yours Core Count](https://github.com/AMD-OSX/AMD_Vanilla)) |
 | DGPU | ✅ | with **agdpmod=pikera** boot arg and **\-v** boot arg _**removed in my**_ final version to prevent black screen on login |
 | HDMI A/V out | ✅ |   |
-| USB | ✅ | Only rear ports - [XHC1 controller disabled](#umaf-tool---disable-xhc1) | 
+| USB | ✅ | Working well| 
 | Keyboard | ✅ | Voodoops2controller Kext |
 | Audio | ✅ | AppleALC kext working with layout-id 21 |
 | Ethernet | ✅ | RealtekRTL8111 Kext |
-| Intel WIFI | ✅ | Itlwm Kext and HeliPort app |
+| Intel WIFI | ✅ |  |
 | Battery | ✅ | VoodooBatteryStatus Kext |
 | Shutdown/Reboot | ✅ |   |
 
@@ -60,13 +60,7 @@ _ Tất cả thông tin tại đây chỉ có thể để tham khảo, không n�
 
 | Item | Status | Notes |
 | --- | --- | --- |
-| [XHC1 USB Controller](#umaf-tool---disable-xhc1) | ❓ | For some reason, with both controllers activated, random freezes occurs. Only XHC0 enabled (rear ports): 3 3.2 USB-A + 1 3.2 USB-C |
-| Trackpad | ⛔️ | No Kext compatible with AMD found |
-| Brightness Control | ⛔️ | No Kext/SSDT compatible found |
-| Sleep | ❓ | At first, some problem with the DGPU's powerplay (I don't have the necessary knowledge to go deeper) |
-| iServices | ❓ | Complete the SMBIOS iMessage/Facetime is work , if you wanna use Airdrop must be replace realmac Wifi |
-| Bluetooth | ⛔️ | Disable XHC1 (same with side usb)- can replace with usb bluetooth  |
-| Microphone | ⛔️ | Is not working on every AMD Devices - can replace with usb SOUND |
+
 
 
 ## Bios Options. //Thiết lập bios
@@ -90,24 +84,7 @@ Read [Disclaimer](https://github.com/DavidS95/Smokeless_UMAF) and download [Univ
 
 | Kext | Description |
 | --- | --- |
-| [AMDRyzenCPUPowerManagement.kext](https://github.com/trulyspinach/SMCAMDProcessor) | Power management and monitoring of AMD processors |
-| [AppleALC.kext](https://github.com/acidanthera/AppleALC) | Native macOS HD audio for not officially supported codecs |
-| [AppleMCEReporterDisabler.kext](https://files.amd-osx.com/AppleMCEReporterDisabler.kext.zip) | Disables AppleIntelMCEReporter which causes panics on AMD CPUs |
-| [BlueToolFixup.kext](https://github.com/acidanthera/BrcmPatchRAM) | Patches Bluetooth stack to allow non-Apple Bluetooth |
-| [Lilu.kext](https://github.com/acidanthera/Lilu) | Platform for arbitrary kext, library, and program patching throughout the system |
-| [NVMeFix.kext](https://github.com/acidanthera/NVMeFix) | Improve compatibility with non-Apple SSDs |
-| [RadeonSensor.kext](https://github.com/aluveitie/RadeonSensor) | GPU temperature |
-| [RealtekRTL8111.kext](https://github.com/Mieze/RTL8111_driver_for_OS_X) | Open source driver for the Realtek RTL8111/8168 family |
-| [RestrictEvents.kext](https://github.com/acidanthera/RestrictEvents) | Blocking unwanted processes causing compatibility issues on different hardware and unlocking the support for certain features restricted to other hardware |
-| [SMCAMDProcessor.kext](https://github.com/trulyspinach/SMCAMDProcessor) | Power management and monitoring of AMD processors |
-| [SMCBatteryManager.kext](https://github.com/acidanthera/VirtualSMC) | Enables battery readings |
-| [SMCRadeonGPU.kext](https://github.com/aluveitie/RadeonSensor) | Provide GPU temperature to a dedicated gadget |
-| [USBToolBox.kext](https://github.com/USBToolBox/kext) | Common actions for USB mapping easier |
-| [UTBMap.kext](https://github.com/USBToolBox/tool) | USB Map performed with the USBToolbox tool on Windows 11 |
-| [VirtualSMC.kext](https://github.com/acidanthera/VirtualSMC) | Advanced Apple SMC emulator in the kernel |
-| [VoodooPS2Controller.kext](https://github.com/acidanthera/VoodooPS2) | Fixes keyboard |
-| [WhateverGreen.kext](https://github.com/acidanthera/WhateverGreen) | Fixes AMD GPU |
-| [itlwm.kext](https://github.com/OpenIntelWireless/itlwm) | Adds Intel WIFI support |
+
 
 ## SSDTs Used. // SSDTs Sử dụng
 
@@ -125,11 +102,8 @@ Almost done with [SSDTTime](https://github.com/corpnewt/SSDTTime) in Windows 11
 ## Credits
 
 *   [AMD-OSX](https://forum.amd-osx.com/) Forum and the [dedicated Thread](https://forum.amd-osx.com/threads/amd-rayon-r7-5800h-install-monterey-kernel-panic.2725) users.
-*   ExtremeXT,Kalkman, for help, corrections, my [first EFI](https://github.com/ExtremeXT/Lenovo_Legion_5_Hackintosh) reference, the original concept of disable one USB Controller AND README informations.
-*   Telegram Noot group members for mention UMAF tool.
-*   zxc2689963 for one EFI reference.
 *   [Dortania](https://dortania.github.io/OpenCore-Install-Guide/) for the guides.
-*   [DavidS95](https://github.com/DavidS95) for [UMAF](https://github.com/DavidS95/Smokeless_UMAF).
+*   [DavidS95](https://github.com/DavidS95) 
 *   [Apple](https://www.apple.com/) for macOS.
 *   [Acidanthera](https://github.com/acidanthera) for OpenCore and most Kexts.
 *   Anyone else that helped to develop and improve hackintoshing.
