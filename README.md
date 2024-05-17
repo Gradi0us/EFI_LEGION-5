@@ -69,16 +69,6 @@ _ Tất cả thông tin tại đây chỉ có thể để tham khảo, không n�
 *   Device Guard **Disabled**
 *   Secure Boot **Disabled**
 
-## UMAF Tool - Disable XHC1 //tắt XHC1
-
-Read [Disclaimer](https://github.com/DavidS95/Smokeless_UMAF) and download [UniversalAMDFormBrowser](https://github.com/DavidS95/Smokeless_UMAF/blob/main/UniversalAMDFormBrowser.zip)
-  //Thanks Kalkman for GIF
-1.  Format a pendrive in **FAT32** and copy content to root
-2.  **Boot** from **pendrive** 
-3.  Navigate to **Device Properties** > **AMD CBS** > **FCH Common Options** > **USB Configuration Options** > **XHCI1 Controller Enable**: Change to **Disabled**
-4.  **Esc** to back and press **Y** when prompted to save, Esc to back, then **Reset** on first menu (not continue)
-
-![](https://user-images.githubusercontent.com/8891448/226887440-8712f449-cc25-43e4-9fb4-1afac1c74b54.gif)
 
 ## Kexts Used // kext sử dụng
 
